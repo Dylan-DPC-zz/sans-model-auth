@@ -1,0 +1,31 @@
+{
+    "name": "dpc/sans-model-auth",
+    "description": "Stateful Auth Guard without a User model for Laravel",
+    "type": "li",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=7.1",
+        "illuminate/contracts": "5.5.*"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Dpc\\SansModelAuth\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dpc\\SansModelAuth\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dpc\\ModellessAuth\\Providers\\SansModelAuthServiceProvier"
+            ]
+        }
+    },
+
+    "prefer-stable": true
+}
