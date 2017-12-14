@@ -10,7 +10,7 @@ use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Contracts\Session\Session;
 
-class EnvGuard implements StatefulGuard
+class SansModelGuard implements StatefulGuard
 {
 
     protected $config;
@@ -59,7 +59,7 @@ class EnvGuard implements StatefulGuard
      */
     public function user()
     {
-        return $this->check() ? new EnvUser() : null;
+        return $this->check() ? new SansModelUser() : null;
     }
 
     /**

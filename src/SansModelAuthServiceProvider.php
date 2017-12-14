@@ -11,7 +11,7 @@ class SansModelAuthServiceProvider extends ServiceProvider
     public function boot()
     {
         Auth::extend('sans-model', function($app) {
-            return new EnvGuard($app->make('config'), $app->make('hash'), $app->make(AuthServiceContract::class));
+            return new SansModelGuard($app->make('config'), $app->make('hash'), $app->make(AuthServiceContract::class));
         });
 
         Auth::provider('sans-model', function($app) {

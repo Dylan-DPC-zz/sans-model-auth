@@ -1,7 +1,7 @@
 {
     "name": "dpc/sans-model-auth",
     "description": "Stateful Auth Guard without a User model for Laravel",
-    "type": "li",
+    "type": "lib",
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {

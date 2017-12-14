@@ -5,7 +5,7 @@ namespace Dpc\SansModelAuth;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 
-class EnvUser implements Authenticatable
+class SansModelUser implements Authenticatable
 {
 
     /**
